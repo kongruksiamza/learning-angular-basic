@@ -1,0 +1,12 @@
+/* โหมดกลางคืน */
+.dark{
+    background: black;
+    color: white;
+    transition: all 0.5s;
+}
+/* โหมดกลางวัน */
+.light{
+    background: white;
+    color: black;
+    transition: all 0.5s;
+}

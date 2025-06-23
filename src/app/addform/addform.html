@@ -1,0 +1,12 @@
+<h2>แบบฟอร์มบันทึกข้อมูลพนักงาน</h2>
+<form (ngSubmit)="addNewEmployee()">
+    <label>ชื่อ-นามสกุล : </label>
+    <input type="text" name="fullname" [(ngModel)]="fullname"/>
+    <label>เงินเดือน : </label>
+    <input type="number" name="salary"
+        min=15000 
+        step="5000" 
+        [(ngModel)]="salary"/>
+    <button type="submit" [disabled]="fullname().trim()==''">บันทึก</button>
+</form>
+<hr>

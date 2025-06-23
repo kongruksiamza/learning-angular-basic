@@ -1,0 +1,12 @@
+<app-header title="แอพของฉัน"/>
+<app-addform (onSave)="insertData($event)"/>
+@for (emp of data; track emp.id) {
+    <app-item 
+        [id]="emp.id" 
+        [name]="emp.name" 
+        [salary]="emp.salary"
+        (onDelete)="removeDataById($event)"
+    />
+}@empty {
+    <h2>ไม่มีข้อมูลพนักงาน</h2>
+}
